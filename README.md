@@ -1,24 +1,81 @@
-# README
+# Restaurant api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Installation Guide
 
-* Ruby version
+Install the Ruby, Rails and PostgreSql versions from https://gorails.com/setup
 
-* System dependencies
+### Clone the repository
 
-* Configuration
+```shell
+git clone https://github.com/aawahab90/restaurants_api.git
+cd project
+```
 
-* Database creation
+### Check your Ruby version
 
-* Database initialization
+```shell
+ruby -v
+```
 
-* How to run the test suite
+The ouput should be `2.4.0`
 
-* Services (job queues, cache servers, search engines, etc.)
+### Check your Rails version
 
-* Deployment instructions
+```shell
+ rails -v
+```
 
-* ...
+The ouput should be `Rails 5.2.1`
+
+
+### Check your Postgres version
+
+```shell
+ postgres --version
+```
+
+The ouput should be `postgres (PostgreSQL) 9.6.2`
+
+
+### Install dependencies
+
+Using [Bundler](https://github.com/bundler/bundler)
+
+```shell
+bundle
+```
+
+### Set environment variables
+
+
+See [.env] and contact the developer: [aawahab90@gmail.com](mailto:aawahab90@gmail.com) (sensitive data).
+
+### Initialize the database
+
+```shell
+rails db:create db:migrate
+```
+
+## Server
+
+```shell
+rails s
+```
+
+## Test cases
+
+### Check if qt is installed on system
+
+```shell
+which qmake
+```
+
+If not then install it from https://doc.qt.io/qt-5/gettingstarted.html
+
+## Run test cases
+
+```shell
+rspec spec
+```
+
